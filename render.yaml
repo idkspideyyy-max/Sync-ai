@@ -1,0 +1,11 @@
+services:
+    - type: web
+    name: sync-ai
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+            - key: GROQ_API_KEY
+        sync: false
+            - key: OPENROUTER_API_KEY
+        sync: false
